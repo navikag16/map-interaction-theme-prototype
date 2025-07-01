@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose a Theme – Map Interaction Prototype</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .button-container {
+      display: flex;
+      gap: 20px;
+    }
+    .theme-button {
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .light {
+      background-color: #ffffff;
+      color: #333;
+      border: 1px solid #ccc;
+    }
+    .light:hover {
+      background-color: #e6e6e6;
+    }
+    .dark {
+      background-color: #333;
+      color: #fff;
+    }
+    .dark:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Choose a Theme to Explore the Map</h1>
+  <div class="button-container">
+    <button class="theme-button light" onclick="location.href='light.html'">🌞 Light Theme</button>
+    <button class="theme-button dark" onclick="location.href='dark.html'">🌙 Dark Theme</button>
+  </div>
+</body>
+</html>
